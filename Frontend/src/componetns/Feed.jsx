@@ -104,7 +104,7 @@ export const Feed = () => {
       "https://api.cloudinary.com/v1_1/dwm6lgmsc/image/upload",
       datas
     );
-    const res = await axios.post("http://localhost:5000/api/post/createpost", {
+    const res = await axios.post("/api/post/createpost", {
       desc,
       image: data.secure_url,
       postby: localStorage.getItem("socialtoken"),
