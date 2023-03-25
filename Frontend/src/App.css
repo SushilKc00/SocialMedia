@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 4px;
+  }
+html{
+    font-size: 65.4%;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+body{
+ background-color: #ffffff;;
+}
+.mylogo{
+  font-size: 2.2rem;
+  font-weight: 900;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #0a1901f2;
+  color: #83f5b2fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.logolink{
+  text-decoration: none;
+}
+.searchlist{
+   position: fixed;
+   left: 10%;
+   border-radius: 10px;
+   font-size: 2rem;
+   height: 40vh;
+   width: 80%;
+   margin: auto;
+   padding: .6rem 2rem;
+   background-color: rgb(220, 225, 229);
+   overflow-y: auto;
+   z-index: 99;
+}
+.searchlist ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: rgb(6, 6, 6);
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.searchlist ul li {
+    font-size: 1.6rem;
+    padding: .8rem 4rem;
+    border-radius: 8px;
+}
+.searchlist ul .link {
+  color: rgb(34, 33, 33);
+  text-decoration: none;
+}
+.searchlist ul li:hover{
+    background-color: rgb(189, 195, 189);
+    transition: .4s ;
+}
+.searchlist ul.link{
+    text-decoration: none;
+}
+@media screen and (max-width:768px) {
+       html{
+         font-size: 58.45%;
+       }
+       .searchlist{
+          left: 20%;
+          top: 8%;
+          z-index: 999;
+       }
+  }
