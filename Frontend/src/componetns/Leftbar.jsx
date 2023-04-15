@@ -75,11 +75,7 @@ export const Leftbar = () => {
                 hoverable
                 style={{ width: "auto" }}
                 cover={
-<<<<<<< HEAD
                   news.image === "" || news.image === null ? (
-=======
-                  news.image === "" ? (
->>>>>>> 61ba19c83787998eb68bc8afebbf44dd0ac6957d
                     <img src="https://images.unsplash.com/photo-1504464920281-04959fd089db?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fG5ld3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
                   ) : (
                     <img src={news.image} alt="example" />
