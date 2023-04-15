@@ -28,7 +28,7 @@ export const Leftbar = () => {
   const formSubmit = async (e) => {
     setSpin(true);
     e.preventDefault();
-    const link = `https://newsapi.in/newsapi/search.php?key=UGftyRfGg7YJ4u3FNoeqWSc3Smz244&q=corona=${searchValue}`;
+    const link = `https://newsapi.in/newsapi/search.php?key=UGftyRfGg7YJ4u3FNoeqWSc3Smz244&q=${searchValue}`;
     const { data } = await axios.get(link);
     console.log(data);
     if (data.success) {
